@@ -1,2 +1,2 @@
 # HTML and CSS Projects
- Contains HTML and CSS Projects
+ Repository for HTML and CSS Projects

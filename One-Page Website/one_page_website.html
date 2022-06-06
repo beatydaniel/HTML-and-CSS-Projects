@@ -3,13 +3,14 @@
 	<head>
 		<title>Dog Lovers Training </title>
 		<meta charset="utf-8">
+		<link rel="stylesheet" href="./css/one_page_website.css">
 	</head>
 	<body>
 		
 		<!-- NAV -->
-		<div>
-			<div>
-				<ul>
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
 					<a href="#home" id="link"><li>Home</li></a>
 					<a href="#gallery" id="link"><li>Gallery</li></a>
 					<a href="#contact" id="link"><li>Subscribe</li></a>
@@ -20,9 +21,9 @@
 		
 		<!--HOME-->
 		<div id="home">
-			<div>
-				<div>
-					<h1><span>Dog Lovers Training</span></h1>
+			<div class="container">
+				<div class="text-center">
+					<h1><span>Dog Lovers Training</span></h1><br>
 					<p>Explore our Gallery and see the dogs in action!</p>
 				</div>
 			</div>
@@ -30,56 +31,51 @@
 		<!--END HOME-->
 		
 		<!--GALLERY-->
-		<section>
-			<div id="gallery">
+		<section id="gallery">
+			<div class="container">
 				<h2>Gallery</h2>
-				<div>
+				<div clas="flex-container">
 					
 					<!--PHOTO-CONAINER 1-->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/thumb/thumbnail_1.png" alt="Dog Jumping">
-						</div>
+					</div>
 					</div>
 					<!--END PHOTO-CONTAINER 1-->
 					
 					<!--PHOTO-CONAINER 2-->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/thumb/thumbnail_2.png" alt="Dogs on ramp">
-						</div>
 					</div>
 					<!--END PHOTO-CONTAINER 2-->
 					
 					<!--PHOTO-CONAINER 3-->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/thumb/thumbnail_3.png" alt="Dog going around poles">
-						</div>
 					</div>
 					<!--END PHOTO-CONTAINER 3-->
 					
 					<!--PHOTO-CONAINER 4-->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/thumb/thumbnail_4.png" alt="Dog Jumping through hoop">
-						</div>
 					</div>
 					<!--END PHOTO-CONTAINER 4-->
 					
 					<!--PHOTO-CONAINER 5-->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/thumb/thumbnail_5.png" alt="Dog Sitting">
-						</div>
 					</div>
 					<!--END PHOTO-CONTAINER 5-->
 					
 					<!--PHOTO-CONAINER 6-->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/thumb/thumbnail_6.png" alt="Dog Graduates">
-						</div>
 					</div>
 					<!--END PHOTO-CONTAINER 6-->
 					
@@ -93,11 +89,11 @@
 		<!--END GALLEY-->
 		
 		<!--Subscription-->
-		<section>
-			<div id="contact">
-				<div>
-					<h3>Subscribe</h3>
-					<div>
+		<section id="contact">
+			<div class="container">
+				<div class="heading-padding">
+					<h3 class="heading-padding">Subscribe</h3>
+					<div class="subscribe">
 						<h4><span>Get Your Pup Moving</span>
 							<br>Join Now and Get Trained Quick!
 						</h4>
@@ -106,14 +102,14 @@
 						</p>
 						<div>
 							<form action="" method= "post">
-								<input class="contact" type="text" value="First Name">
-								<input class="contact" type="text" value="Last Name">
-								<input class="contact" type="text" value="Email Address">
-								<input class="contact" type="text" value="Phone Number">
-								<div class= "form-student">
+								<input class="contact" type="text" value=""	placeholder="First Name">
+								<input class="contact" type="text" value=""	placeholder="Last Name">
+								<input class="contact" type="text" value="" placeholder="Email Address">
+								<input class="contact" type="text" value="" placeholder="Phone Number">
+								<div class= "form-spacer">
 									<label class="terms">Terms and Conditions</label>
 								</div>
-								<div>
+								<div class="submit">
 									<input type="submit" value="Submit">
 								</div>
 							</form>
@@ -123,7 +119,7 @@
 		<!--END-Subscription-->
 		
 		<!--FOOTER-->
-		<div>
+		<div id="footer">
 			www.dogloverstraining.com &nbsp;|&nbsp; &copy 2022
 		</div>
 		<!--END-FOOTER-->

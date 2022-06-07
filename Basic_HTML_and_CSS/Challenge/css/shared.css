@@ -18,6 +18,12 @@ img {
     height: auto;
     width: 100%;
 }
+
+.video{
+    display: block;
+    height: auto;
+    width: 100%;
+}
 .overlay {
     overflow: hidden;
     position:absolute;
@@ -55,13 +61,13 @@ table,td {
 }
 
 th{
-    background-color: grey;
+    background-color: rgb(255, 255, 255);
 }
 
 .container{
     position: relative;
     text-align: center;
-    color: gold;
+    color: rgb(88, 19, 249);
 }
 
 .centered{

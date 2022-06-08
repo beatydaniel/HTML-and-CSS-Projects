@@ -174,7 +174,7 @@ footer {
 
 /* Texts over the video */
 .Video_Text {
-    background:rgba(0, 0, 0, 0.5);
+    background:rgba(0, 0, 0, 0.5); /* This provides a semi-transparent background for the text to sit over */
     color: white;
     width: 100%;
     padding: 20px;

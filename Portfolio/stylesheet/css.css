@@ -179,8 +179,8 @@ footer {
     width: 100%;
     padding: 20px;
     position: relative;
-    -webkit-animation: moveVideoText 5.75s;
-    animation: moveVideoText 5.75s;
+    -webkit-animation: moveVideoText 3.75s;
+    animation: moveVideoText 3.75s;
 }
 
 /* This animation effect causes the overlay video text to move up from the bottom of the page upon page load */

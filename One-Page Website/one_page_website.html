@@ -2,7 +2,9 @@
 <html lang="en">
 	<head>
 		<title>Dog Lovers Training </title>
-		<meta charset="utf-8">
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+		<meta content ="width=device-width,initial-scale=1.0" name="viewport">
+		<script src="JS/one_page_website.js" defer></script>
 		<link rel="stylesheet" href="./css/one_page_website.css">
 	</head>
 	<body>
@@ -35,57 +37,92 @@
 			<div class="container">
 				<h2>Gallery</h2>
 				<div clas="flex-container">
-					
-					<!--PHOTO-CONAINER 1-->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/thumb/thumbnail_1.png" alt="Dog Jumping">
-					</div>
-					</div>
-					<!--END PHOTO-CONTAINER 1-->
-					
-					<!--PHOTO-CONAINER 2-->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/thumb/thumbnail_2.png" alt="Dogs on ramp">
-					</div>
-					<!--END PHOTO-CONTAINER 2-->
-					
-					<!--PHOTO-CONAINER 3-->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/thumb/thumbnail_3.png" alt="Dog going around poles">
-					</div>
-					<!--END PHOTO-CONTAINER 3-->
-					
-					<!--PHOTO-CONAINER 4-->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/thumb/thumbnail_4.png" alt="Dog Jumping through hoop">
-					</div>
-					<!--END PHOTO-CONTAINER 4-->
-					
-					<!--PHOTO-CONAINER 5-->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/thumb/thumbnail_5.png" alt="Dog Sitting">
-					</div>
-					<!--END PHOTO-CONTAINER 5-->
-					
-					<!--PHOTO-CONAINER 6-->
-					<div class="photo-container">
-						<div class="photo">
-							<img src="./images/thumb/thumbnail_6.png" alt="Dog Graduates">
-					</div>
-					<!--END PHOTO-CONTAINER 6-->
-					
-					<!--Video-CONTAINER 1-->
-					<div>
-						<div>
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/1oDGa2yPb2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</section>
+
+					<!-- Images/videos that are used in the page-->
+					<div class="row">
+						<div class="column">
+						  <img src="./images/thumb/thumbnail_1.png"  onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+						  <img src="./images/thumb/thumbnail_2.png"  onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+						  <img src="./images/thumb/thumbnail_3.png"  onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+						  <img src="./images/thumb/thumbnail_4.png"  onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+						</div>
+						<div class="column">
+							<img src="./images/thumb/thumbnail_5.png"  onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+						  </div>
+						  <div class="column">
+							<img src="./images/thumb/thumbnail_6.png"  onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+						  </div>
+						  <iframe width="560" height="315" src="https://www.youtube.com/embed/1oDGa2yPb2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					  </div>
+					  <!-- Images that are in the Lightbox -->
+					  <div id="myModal" class="modal">
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
+					  
+						  <div class="mySlides">
+							<div class="numbertext">1 / 6</div>
+							<img src="./images/thumb/thumbnail_1.png" >
+						  </div>
+					  
+						  <div class="mySlides">
+							<div class="numbertext">2 / 6</div>
+							<img src="./images/thumb/thumbnail_2.png">
+						  </div>
+					  
+						  <div class="mySlides">
+							<div class="numbertext">3 / 6</div>
+							<img src="./images/thumb/thumbnail_3.png" >
+						  </div>
+						  
+						  <div class="mySlides">
+							<div class="numbertext">4 / 6</div>
+							<img src="./images/thumb/thumbnail_4.png" >
+						  </div>
+
+						  <div class="mySlides">
+							<div class="numbertext">5 / 6</div>
+							<img src="./images/thumb/thumbnail_5.png" >
+						  </div>
+
+						  <div class="mySlides">
+							<div class="numbertext">6 / 6</div>
+							<img src="./images/thumb/thumbnail_6.png">
+						  </div>
+						  
+						  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+					  
+						  <div class="caption-container">
+							<p id="caption"></p>
+						  </div>
+					  
+					  
+						  <div class="column">
+							<img class="thumb cursor" src="./images/thumb/thumbnail_1.png"  onclick="currentSlide(1)" alt="Dog Jumping">
+						  </div>
+						  <div class="column">
+							<img class="thumb cursor" src="./images/thumb/thumbnail_2.png"  onclick="currentSlide(2)" alt="Dogs on ramp">
+						  </div>
+						  <div class="column">
+							<img class="thumb cursor" src="./images/thumb/thumbnail_3.png"  onclick="currentSlide(3)" alt="Dog going around poles">
+						  </div>
+						  <div class="column">
+							<img class="thumb cursor" src="./images/thumb/thumbnail_4.png"  onclick="currentSlide(4)" alt="Dog Jumping through hoop">
+						  </div>
+						  <div class="column">
+							<img class="thumb cursor" src="./images/thumb/thumbnail_5.png"  onclick="currentSlide(5)" alt="Dog Sitting">
+						  </div>
+						  <div class="column">
+							<img class="thumb cursor" src="./images/thumb/thumbnail_6.png"  onclick="currentSlide(6)" alt="Dog Graduates">
+						  </div>
+						</div>
+					  </div>
 		<!--END GALLEY-->
 		
 		<!--Subscription-->
